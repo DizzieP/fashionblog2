@@ -1,4 +1,5 @@
-* {
+
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -369,6 +370,7 @@ button {
 textarea {
     margin-left: 1.25rem;
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 
@@ -1131,3 +1133,4 @@ textarea {
 
 
 }
+
