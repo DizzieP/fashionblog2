@@ -1,0 +1,754 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+div.container {
+    display: inline-grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 3.125rem solid #fadadd;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+a.logo-title {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    list-style-type: none;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    line-height: 4.6875rem;
+    border-right: 1px solid gray;
+    text-align: center;
+    width: 100%;
+}
+
+a.blog-link {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    list-style-type: none;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 4.6875rem;
+    border-right: 0.0625rem solid gray;
+    text-align: center;
+    width: 100%;
+}
+
+a.about-link {
+    text-align: center;
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+    list-style-type: none;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 4.6875rem;
+    border-right: 0.0625rem solid gray;
+    width: 100%;
+}
+
+a.contact-link {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    list-style-type: none;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5rem;
+    line-height: 4.6875rem;
+    border-right: 0.0625rem solid gray;
+    text-align: center;
+    width: 100%;
+}
+
+i.fa-brands.fa-facebook.fa-2x::before {
+    grid-column: 8 / 9;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    line-height: 4.6875rem;
+    width: 100%;
+}
+
+i.fa-brands.fa-instagram.fa-2x::before {
+    grid-column: 9 / 10;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: center;
+    line-height: 4.6875rem;
+    width: 100%;
+}
+
+div#blog {
+    display: inline-grid;
+    grid-column-gap: 0.625rem;
+    grid-row-gap: 1.25rem;
+    grid-row: 3 / 4;
+    grid-column: 1 / 10;  
+}
+
+h1 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 10;
+    border-top: 0.125rem solid gray;
+    border-bottom: 0.125rem solid gray;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4.6875rem;
+    grid-row-gap: 0;
+    width: 100%;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    width: 18.5rem;
+    height: 16.875rem;
+}
+
+
+div.blogbox-1 {
+    grid-row: 3 / 4;
+    grid-column: 1  / 2;
+    padding: 0px;
+    border: 0.125rem solid gray;
+    width: 18.75rem;
+}
+
+div.blogbox-2 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    padding: 0;
+    border: 0.125rem solid gray;
+    width: 18.75rem;
+}
+
+div.blogbox-3 {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    padding: 0;
+    border: 0.125rem solid gray;
+    width: 18.75rem;
+}
+
+div.blogbox-4 {
+    grid-row: 3 / 4;
+    grid-column: 7 / 8;
+    padding: 0;
+    border: 0.125rem solid gray;
+    width: 18.75rem;
+}
+
+ul.relatedcontent-list {
+    padding-left: 2.5rem;
+    width: 12.5rem;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5625rem;
+    text-align: left;
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+}
+
+p {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: left;
+}
+
+div#about {
+    display: inline-grid;
+    grid-row-gap: 0.625rem;
+    grid-column-gap: 0.625rem;
+   grid-row: 4 / 5;
+   grid-column: 1 / 10;
+}
+
+img.aboutisa {
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+    width: 25rem;
+    height: 100%;
+}
+
+div.isa {
+    grid-row: 4 / 5;
+    grid-column: 6 / 10;
+    width: 25rem;
+    align-self: center;
+}
+
+h2.follow-header {
+    font-weight: bold;
+    line-height: 4.6875rem;
+    border-top: 0.125rem solid gray;
+    border-bottom: 0.125rem solid gray;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+div#follow {
+    grid-column: 1 / 10;
+    grid-row: 5 / 6;
+    grid-row-gap: 0.625rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+div.follow-images {
+    grid-row: 6 / 7;
+    grid-column: 2 / 9;
+    width: 100%;
+    height: 16.875rem;
+}
+
+img.follow-1 {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    width: 12.5rem;
+}
+
+img.follow-2 {
+    grid-row: 6 / 7;
+    grid-column: 4 / 5;
+    width: 12.5rem;
+}
+
+img.follow-3 {
+    grid-row: 6 / 7;
+    grid-column: 5 / 6;
+    width: 12.5rem;
+}
+
+img.follow-4 {
+    grid-row: 6 / 7;
+    grid-column: 6 / 7;
+    width: 12.5rem;
+}
+
+img.follow-5 {
+    grid-row: 6 / 7;
+    grid-column: 7 / 8;
+    width: 12.5rem;
+}
+
+img.follow-6 {
+    grid-row: 6 / 7;
+    grid-column: 8 / 9;
+    width: 12.5rem;
+}
+
+div#shop {
+    grid-column: 1 / 10;
+    grid-row: 7 / 8;
+    grid-row-gap: 0.625rem;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+h2.shop-header {
+    font-weight: bold;
+    line-height: 4.6875rem;
+    border-top: 0.125rem solid gray;
+    border-bottom: 0.125rem solid gray;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+div.shop-images {
+    border: 0.125rem solid gray;
+    grid-row: 8 / 9;
+    grid-column: 2 / 9;
+    width: 100%;
+    height: 23.6875rem;
+}
+
+img.shop-1 {
+    grid-row: 8 / 9;
+    grid-column: 2 / 5;
+    width: 21.875rem;
+    height: 15.625rem;
+    align-self: center;
+    margin-right: 1.25rem;
+    line-height: 23.4375rem;
+    vertical-align: 17%;
+}
+
+img.shop-2 {
+    grid-row: 8 / 9;
+    grid-column: 6 / 9;
+    width: 43.75rem;
+    height: 23.4375rem;
+    align-self: center;
+    justify-self: center;
+}
+
+div#contact {
+    display: inline-grid;
+    grid-column: 2 / 9;
+    grid-row: 9 / 10;
+    width: 100%;
+    height: auto;
+}
+
+div.contact-1 {
+    grid-row: 9 / 10;
+    grid-column: 3 / 5;
+    justify-self: start;
+}
+
+div.contact-list {
+    display: grid;
+    grid-row-gap: 1.25rem;
+}
+
+div.contact-2 {
+    grid-row: 9 / 10;
+    grid-column: 6 / 8;
+    justify-self: start;
+}
+
+h3.contact-header {
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.5625rem;
+    text-align: left; 
+}
+
+h3.fun-header {
+    font-size: 1.5625rem;
+    text-align: left;
+    padding-top: 2.5rem;
+}
+
+i.fa-brands.fa-facebook-2 {
+    grid-column: 3 / 5;
+    grid-row: 10 / 11;
+}
+
+i.fa-brands.fa-instagram-2 {
+    grid-column: 3 / 5;
+    grid-row: 10 / 11;
+}
+
+div.footer {
+    grid-row: 10 / 11;
+    grid-column: 1 / 10;
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+}
+
+button {
+    margin-top: 1.25rem;
+}
+
+textarea {
+    margin-left: 1.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+
+    div.container {
+        display: grid;
+        border: 0;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        grid-row-gap: 0;
+    }
+
+    a.logo-title {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        list-style-type: none;
+        font-size: 1.5rem;
+        justify-self: center;
+        align-self: center;
+        line-height: 4.6875rem;
+        background-color: #fadadd;
+        text-align: center;
+        width: 100%;
+    }
+    
+    a.blog-link {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        list-style-type: none;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+        line-height: 4.6875rem;
+        background-color: #fadadd;
+        text-align: center;
+        width: 100%;
+    }
+    
+    a.about-link {
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: auto;
+        list-style-type: none;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+        line-height: 4.6875rem;
+        background-color: #fadadd;
+        width: 100%;
+    }
+    
+    a.contact-link {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        list-style-type: none;
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5rem;
+        line-height: 4.6875rem;
+        background-color: #fadadd;
+        text-align: center;
+        width: 100%;
+    }
+
+    div.social-links {
+        display: inline-block;
+        background-color: #fadadd;
+        width: 100%;
+    }
+    
+    i.fa-brands.fa-facebook.fa-2x::before {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    
+    i.fa-brands.fa-instagram.fa-2x::before {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    
+    div#blog {
+        display: grid;
+        grid-row: auto;
+        grid-column: 1 / 2;  
+    }
+    
+    h1 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        border-top: 0.125rem solid gray;
+        border-bottom: 0.125rem solid gray;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 4.6875rem;
+        grid-row-gap: 0;
+        width: 100%;
+        background-color: gray;
+        color: white;
+    }
+    
+    img {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    div.blogbox-1 {
+        border: 0;
+        grid-row: auto;
+        grid-column: 1  / 2;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    div.blogbox-2 {
+        border: 0;
+        grid-row: auto;
+        grid-column: 1 / 2;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    div.blogbox-3 {
+        border: 0;
+        grid-row: auto;
+        grid-column: 1 / 2;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    div.blogbox-4 {
+        border: 0;
+        grid-row: auto;
+        grid-column: 1 / 2;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    ul.relatedcontent-list {
+        padding-left: 2.5rem;
+        width: 12.5rem;
+        text-align: left;
+    }
+    
+    h3 {
+        font-size: 1.5625rem;
+        text-align: left;
+        padding-top: 1.25rem;
+        padding-left: 2.5rem;
+    }
+    
+    p {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.25rem;
+        text-align: left;
+    }
+    
+    div#about {
+        display: grid;
+        grid-row-gap: 0;
+       grid-row: auto;
+       grid-column: 1 / 2;
+    }
+    
+    img.aboutisa {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.isa {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        align-self: center;
+        margin-top: 1.5rem;
+    }
+    
+    h2.follow-header {
+        font-weight: bold;
+        line-height: 4.6875rem;
+        border-top: 0.125rem solid gray;
+        border-bottom: 0.125rem solid gray;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    
+    div#follow {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        grid-row-gap: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    div.follow-images {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-1 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-2 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-3 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-4 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-5 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    img.follow-6 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    div#shop {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    h2.shop-header {
+        font-weight: bold;
+        line-height: 4.6875rem;
+        border-top: 0.125rem solid gray;
+        border-bottom: 0.125rem solid gray;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    
+    div.shop-images {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+        border: 0;
+    }
+    
+    img.shop-1 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 21.875rem;
+        height: 15.625rem;
+        align-self: center;
+        margin-right: 1.25rem;
+        
+    }
+    
+    img.shop-2 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+    
+    div#contact {
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: auto;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    div.contact-1 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        justify-self: start;
+    }
+    
+    div.contact-list {
+        display: grid;
+        grid-row-gap: 1.25rem;
+    }
+    
+    div.contact-2 {
+        grid-row: auto;
+        grid-column: 1 / 2;
+        justify-self: start;
+    }
+    
+    h3.contact-header {
+        padding-top: 2.5rem;
+        padding-bottom: 1.25rem;
+        font-size: 1.5625rem;
+        text-align: left; 
+        justify-self: center;
+    }
+    
+    h3.fun-header {
+        font-size: 1.5625rem;
+        text-align: left;
+        padding-top: 2.5rem;
+        justify-self: center;
+    }
+    
+    i.fa-brands.fa-facebook-2 {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    
+    i.fa-brands.fa-instagram-2 {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+    
+    div.footer {
+        margin-top: 3rem;
+        grid-row: auto;
+        grid-column: 1 / 2;
+        text-align: center;
+    }
+    
+    button {
+        margin-top: 1.25rem;
+    }
+    
+    textarea {
+        margin-left: 1.25rem;
+    }
+    
+}
