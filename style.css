@@ -3,8 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    font-family: 'Riety', serif;
 }
 
 div.container {
@@ -369,6 +369,16 @@ button {
 
 textarea {
     margin-left: 1.25rem;
+}
+
+@font-face {
+    font-family: 'Riety';
+    src: url('fonts/Riety.eot');
+    src: url('fonts/Riety.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Riety.woff2') format('woff2'),
+         url('fonts/Riety.woff') format('woff'),
+         url('fonts/Riety.ttf')  format('truetype'),
+         url('fonts/Riety.svg#Riety') format('svg');
 }
 
 
