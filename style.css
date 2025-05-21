@@ -23,7 +23,7 @@ div.container {
     text-align: center;
 }
 
-a.logo-corner {
+.logo-corner {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: start;
