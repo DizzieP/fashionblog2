@@ -23,13 +23,9 @@ div.container {
     text-align: center;
 }
 
-.logo-corner {
+a.logo-corner {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    justify-self: start;
-    align-self: center;
-    line-height: 4.6875rem;
-    width: 100%;
 }
 
 a.logo-title {
