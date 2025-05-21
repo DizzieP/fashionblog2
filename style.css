@@ -26,6 +26,8 @@ div.container {
 a.logo-corner {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    justify-self: start;
+    align-self: center;
 }
 
 a.logo-title {
