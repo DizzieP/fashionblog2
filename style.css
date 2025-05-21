@@ -30,6 +30,7 @@ a img.logo-corner {
     align-self: center;
     width: 50%;
     height: auto;
+    line-height: 4.6875rem;
 }
 
 a.logo-title {
